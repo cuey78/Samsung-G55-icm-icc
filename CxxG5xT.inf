@@ -1,0 +1,111 @@
+
+;==================================================
+; CxxG5xT.inf 06/22/2020 ver. 1.0Y
+;
+; Copyright 2020 Samsung Electronics Corporation
+;
+; This is a Setup information file for Samsung Monitor. 
+;==================================================
+
+[Version]
+signature="$CHICAGO$"
+Class=Monitor
+ClassGuid={4D36E96E-E325-11CE-BFC1-08002BE10318}
+Provider=%Samsung%
+CatalogFile=CxxG5xT.cat
+DriverVer=06/22/2020,1.0
+
+;--------------------------------------------------
+[ControlFlags]
+ExcludeFromSelect.nt=Monitor\SAM7088
+ExcludeFromSelect.nt=Monitor\SAM7089
+
+[DestinationDirs]
+DefaultDestDir = 11
+CxxG5xTh.CopyFiles = 23
+CxxG5xTdp.CopyFiles = 23
+
+[SourceDisksNames]
+1=%DISK%,,,
+
+[SourceDisksFiles]
+CxxG5xT.icm=1
+CxxG5xT.icm=1
+
+[Manufacturer]
+%Samsung%=Samsung,NTx86,NTAMD64
+
+; Manufacturer sections
+;-----------------------------------------------------
+[Samsung]
+%CxxG5xTh%=CxxG5xTh.Install, Monitor\SAM7088
+%CxxG5xTdp%=CxxG5xTdp.Install, Monitor\SAM7089
+
+; Manufacturer sections
+;-----------------------------------------------------
+[Samsung.NTx86]
+%CxxG5xTh%=CxxG5xTh.Install, Monitor\SAM7088
+%CxxG5xTdp%=CxxG5xTdp.Install, Monitor\SAM7089
+
+; Manufacturer sections
+;-----------------------------------------------------
+[Samsung.NTAMD64]
+%CxxG5xTh%=CxxG5xTh.Install, Monitor\SAM7088
+%CxxG5xTdp%=CxxG5xTdp.Install, Monitor\SAM7089
+
+; Install Sections
+;-----------------------------------------------------
+
+[CxxG5xTh.Install]
+DelReg=DEL_CURRENT_REG
+AddReg=CxxG5xTh.AddReg, 2560, DPMS
+CopyFiles=CxxG5xTh.CopyFiles
+
+[CxxG5xTdp.Install]
+DelReg=DEL_CURRENT_REG
+AddReg=CxxG5xTdp.AddReg, 2560, DPMS
+CopyFiles=CxxG5xTdp.CopyFiles
+
+; Addreg & DelReg sections
+;-----------------------------------------------------
+
+[DEL_CURRENT_REG]
+HKR,MODES
+HKR,,MaxResolution
+HKR,,DPMS
+HKR,,ICMProfile
+
+[2560]
+HKR,,MaxResolution,,"2560,1440"
+
+
+[DPMS]
+HKR,,DPMS,,1
+
+; AddReg sections
+;-----------------------------------------------------
+
+
+[CxxG5xTh.AddReg]
+HKR,"MODES\2560,1440",Mode1,,"30-214,50-144,+,-"
+HKR,,ICMProfile,0,"CxxG5xT.icm"
+
+[CxxG5xTdp.AddReg]
+HKR,"MODES\2560,1440",Mode1,,"30-214,50-144,+,-"
+HKR,,ICMProfile,0,"CxxG5xT.icm"
+;------------------------------------------------------
+
+[CxxG5xTh.CopyFiles]
+CxxG5xT.icm
+
+[CxxG5xTdp.CopyFiles]
+CxxG5xT.icm
+
+;------------------------------------------------------
+
+[Strings]
+DISK="Samsung Monitor Installation Disk"
+MonitorClassName="Monitor"
+Samsung="Samsung"
+CxxG5xTh="G55T_CxxG5xT (HDMI)"
+CxxG5xTdp="G55T_CxxG5xT (DP)"

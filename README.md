@@ -34,10 +34,6 @@ After installation, you can set the installed color profile as the default profi
 
 Contributions to improve or add new ICM profiles for the Samsung LC27G55TQBEXXY monitor are welcome. If you have created a new profile or improved an existing one, please fork this repository, make your changes, and submit a pull request.
 
-## License
-
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
 ## Disclaimer
 
 - Use these color profiles at your own risk. While efforts have been made to provide accurate profiles, results may vary depending on individual monitor settings and calibration tools.

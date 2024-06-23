@@ -46,5 +46,5 @@ This repository is licensed under the MIT License. See the [LICENSE](LICENSE) fi
 ## Credits
 
 - Original profiles sourced from [Samsung](https://www.samsung.com).
-- Contributors: [Your Name] (@yourgithubusername)
+
 

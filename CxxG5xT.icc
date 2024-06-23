@@ -1,0 +1,95 @@
+icc:
+Header:
+  Profile size    = 536 bytes
+  CMM             = 0x0
+  Version         = 2.2.0
+  Device Class    = Display
+  Color Space     = RGB
+  Conn. Space     = XYZ
+  UTC Date&Time   = 14 Mar 2017, 13:56:00
+  Local Date&Time = 14 Mar 2017, 23:56:00
+  Platform        = Microsoft
+  Flags           = Not Embedded Profile, Use anywhere
+  Dev. Mnfctr.    = 0x53454300
+  Dev. Model      = 0x0
+  Dev. Attrbts    = Reflective, Glossy, Positive, Color
+  Rndrng Intnt    = Perceptual
+  Illuminant      = 0.96418762, 1.00000000, 0.82490540    [Lab 100.000000, -0.002638, 0.000000]
+  Creator         = 0x53454300
+
+tag 0:
+  sig      'desc'
+  type     'desc'
+  offset   240
+  size     112
+TextDescription:
+  ASCII data, length 16 chars:
+    0x0000: Samsung CxxG5xT
+  No Unicode data
+  No ScriptCode data
+
+tag 1:
+  sig      'rXYZ'
+  type     'XYZ '
+  offset   352
+  size     20
+XYZArray:
+  No. elements = 1
+
+tag 2:
+  sig      'gXYZ'
+  type     'XYZ '
+  offset   372
+  size     20
+XYZArray:
+  No. elements = 1
+
+tag 3:
+  sig      'bXYZ'
+  type     'XYZ '
+  offset   392
+  size     20
+XYZArray:
+  No. elements = 1
+
+tag 4:
+  sig      'wtpt'
+  type     'XYZ '
+  offset   412
+  size     20
+XYZArray:
+  No. elements = 1
+
+tag 5:
+  sig      'rTRC'
+  type     'curv'
+  offset   432
+  size     16
+Curve:
+  Curve is gamma of 2.1992187500
+
+tag 6:
+  sig      'gTRC'
+  type     'curv'
+  offset   448
+  size     16
+Curve:
+  Curve is gamma of 2.1992187500
+
+tag 7:
+  sig      'bTRC'
+  type     'curv'
+  offset   464
+  size     16
+Curve:
+  Curve is gamma of 2.1992187500
+
+tag 8:
+  sig      'cprt'
+  type     'text'
+  offset   480
+  size     56
+Text:
+  ASCII data, length 47 chars:
+    0x0000: Copyright(c) 2020 Samsung Electronics Co., Ltd
+

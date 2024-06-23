@@ -30,6 +30,19 @@ After installation, you can set the installed color profile as the default profi
    - Click on "Set as Default Profile".
    - Click "Close" to apply the changes.
 
+3. **Apply the ICC profile**:
+   - Depending on your Linux desktop environment, the steps to apply the ICC profile may vary:
+     - **GNOME (Settings)**:
+       - Go to Settings > Devices > Color.
+       - Click on your monitor.
+       - Click on the "Add profile" button and select the installed ICC profile.
+       - Set it as default.
+     - **KDE (System Settings)**:
+       - Go to System Settings > Hardware > Display and Monitor > Color.
+       - Click on your monitor.
+       - Click on "Add profile" and select the installed ICC profile.
+       - Apply the changes.
+
 ## Contributing
 
 Contributions to improve or add new ICM profiles for the Samsung LC27G55TQBEXXY monitor are welcome. If you have created a new profile or improved an existing one, please fork this repository, make your changes, and submit a pull request.

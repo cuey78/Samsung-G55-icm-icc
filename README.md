@@ -1,4 +1,4 @@
-# Samsung 27-inch G5 LC27G55TQBEXXY ICM Color Profiles
+# Samsung 27-inch G5 LC27G55TQBEXXY ICM / ICC Color Profiles
 
 This repository contains ICM color profiles for the Samsung 27-inch G5 LC27G55TQBEXXY monitor. These profiles are designed to enhance color accuracy and consistency for various use cases, such as graphic design, photo editing, and general multimedia viewing.
 
